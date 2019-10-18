@@ -1,15 +1,14 @@
 import React from 'react';
 import ProgressBar from './components/ProgressBar';
-import Filler from './components/Filler';
 import styled from "styled-components";
+
+const state = { percentage: 60 };
 
 function App() {
   return (
     <AppContainer>
       <AppDiv>
-        <ProgressBar>
-        <Filler />
-      </ProgressBar>
+        <ProgressBar percentage={state.percentage} />
       </AppDiv>
     </AppContainer>
   );

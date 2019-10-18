@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
 
-const Filler = () => {
+const Filler = (props) => {
     return(
-        <FillerDiv />
+        <FillerDiv percentage={props.percentage} />
     );
 }
 
@@ -12,6 +12,7 @@ const FillerDiv = styled.div`
     height: 100%;
     border-radius: inherit;
     transition: width .2s ease-in;
+    width: ${props => props.percentage}%
 `;
 
 export default Filler;
