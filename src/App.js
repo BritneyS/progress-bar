@@ -8,7 +8,7 @@ function App() {
   const updatePercentage = () => setPercentage(percentage + 10);
 
   const isMaxPercentage = (number) => {
-    return number >= 100 ? true : false
+    return number >= 100
   }
 
   const handleClick = () => {
