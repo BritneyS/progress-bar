@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProgressBar from './components/ProgressBar';
 import styled from "styled-components";
 
-const state = { percentage: 60 };
-
 function App() {
+  const [percentage, setPercentage] = useState(0);
+
   return (
     <AppContainer>
       <AppDiv>
-        <ProgressBar percentage={state.percentage} />
+        <ProgressBar percentage={percentage} />
+        <button onClick={() => setPercentage(percentage + 10)}>
+          {percentage}
+        </button>
       </AppDiv>
     </AppContainer>
   );
