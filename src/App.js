@@ -21,9 +21,9 @@ function App() {
     <AppContainer>
       <AppDiv>
         <ProgressBar percentage={percentage} />
-        <button onClick={handleClick}>
+        <ProgressButton onClick={handleClick}>
           {percentage}
-        </button>
+        </ProgressButton>
       </AppDiv>
     </AppContainer>
   );
@@ -44,4 +44,20 @@ const AppDiv = styled.div`
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+`;
+
+const ProgressButton = styled.button`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #EE4266;
+  color: #f0f0f0;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0px;
+  height: 30px;
+  width: 100px;
+  border-radius: 50px;
+  border: 1px solid #fff;
 `;

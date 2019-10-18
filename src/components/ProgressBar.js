@@ -16,6 +16,7 @@ const ProgressBarDiv = styled.div`
     width: 350px;
     border-radius: 50px;
     border: 1px solid #fff;
+    margin-bottom: 20px;
 `;
 
 export default ProgressBar;

@@ -8,7 +8,7 @@ const Filler = (props) => {
 }
 
 const FillerDiv = styled.div`
-    background: #09d3ac;
+    background: #EE4266;
     height: 100%;
     border-radius: inherit;
     transition: width .2s ease-in;
