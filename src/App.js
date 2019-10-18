@@ -5,11 +5,23 @@ import styled from "styled-components";
 function App() {
   const [percentage, setPercentage] = useState(0);
 
+  const updatePercentage = () => setPercentage(percentage + 10);
+
+  const isMaxPercentage = (number) => {
+    return number >= 100 ? true : false
+  }
+
+  const handleClick = () => {
+    if (!isMaxPercentage(percentage)) {
+      updatePercentage();
+    }
+  }
+
   return (
     <AppContainer>
       <AppDiv>
         <ProgressBar percentage={percentage} />
-        <button onClick={() => setPercentage(percentage + 10)}>
+        <button onClick={handleClick}>
           {percentage}
         </button>
       </AppDiv>
